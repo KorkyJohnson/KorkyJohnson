@@ -12,7 +12,7 @@ def hello_there(request, name):
 
     # Filter the name argument to letters only using regualr expressions. URL arguments
     # can contain arbitary text, so we restrict to safe characters only.
-    match_object = re.match("a-zA-Z", name)
+    match_object = re.match("[a-zA-Z]+", name)
 
     if match_object:
         clean_name = match_object.group(0)
