@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello',                        # makes sure it knows about the 'hello' app so that it can handle templating
 ]
 
 MIDDLEWARE = [
